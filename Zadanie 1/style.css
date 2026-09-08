@@ -1,0 +1,78 @@
+* {
+  margin:0px;
+  border:0px;
+}
+body {
+  margin:10px;
+  background-image:url("img/background1.jpeg");
+  background-size:cover;
+}
+img {
+  padding:0 20px 20px 0;
+}
+h1 {
+  padding:10px;
+  display:inline-block;
+  vertical-align:top;
+  font-size:3em;
+}
+h1, h2, legend {
+  font-family:"Segoe Script", "Arial";
+}
+fieldset {
+  border:0;
+  font-weight:700;
+  font-size:2em;
+  border-top:1px gray solid;
+}
+legend {
+  user-select:none;
+  color:black;
+  background-color:rgba(255,255,255,0.5);
+  border:1px gray solid;
+  border-radius:50vh;
+  padding:5px;
+}
+legend:hover {
+  cursor:pointer;
+}
+legend::after {
+  content:"«";
+  display:inline-block;
+  transform:rotate(90deg);
+  transition:transform 0.5s ease;
+}
+legend.active::after {
+  transform:rotate(270deg);
+}
+.zip {
+  background-color:#fff5;
+  overflow:hidden;
+  height:0;
+  text-align:justify;
+  transition:height 0.5s ease;
+  font-family:"Delicious Handrawn";
+  font-weight:100;
+  border-radius:3vh;
+}
+.zip.active {
+  border:10px solid #fff0;
+  height:300px;
+}
+@media only screen and (orientation:portrait) {
+  body {
+    background-image:url("img/background2.jpeg");
+  }
+  .zip {
+    border-radius:1vh;
+  }
+  .zip.active {
+    height:1100px;
+  }
+  h1 {
+    font-size:5em;
+  }
+  fieldset {
+    font-size:3em;
+  }
+}
