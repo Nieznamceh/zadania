@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pixel Studio — kreatywna agencja reklamowa tworząca nowoczesne strony, identyfikacje wizualne i kampanie marketingowe.">
+  <meta name="theme-color" content="#6c4df6">
+  <title>Pixel Studio | Agencja reklamowa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="icon.png"rel="icon"type="image/x-icon">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Główna nawigacja">
+      <a class="logo" href="#start" aria-label="Pixel Studio - strona główna">
+        <span>Pixel</span> Studio
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Otwórz menu</span>
+      </button>
+      <ul class="nav-menu" id="main-menu">
+        <li><a href="#start">Start</a></li>
+        <li><a href="#uslugi">Usługi</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Przełącz motyw">
+        <span aria-hidden="true">☾</span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-content">
+        <p class="eyebrow">Kreatywna agencja reklamowa</p>
+        <h1>Tworzymy marki, które <span>przyciągają uwagę.</span></h1>
+        <p class="hero-text">
+          Projektujemy nowoczesne strony internetowe, identyfikacje wizualne
+          i kampanie reklamowe, które pomagają firmom rozwijać się online.
+        </p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#kontakt">Rozpocznij projekt</a>
+          <a class="button button-secondary" href="#portfolio">Zobacz portfolio</a>
+        </div>
+      </div>
+      <figure class="hero-graphic" aria-label="Grafika przedstawiająca kreatywny projekt">
+        <div class="graphic-card card-one">✦</div>
+        <div class="graphic-card card-two">PIXEL</div>
+        <div class="graphic-card card-three">CREATIVE</div>
+      </figure>
+    </section>
+    <section class="section services" id="uslugi">
+      <header class="section-header">
+        <p class="eyebrow">Co robimy</p>
+        <h2>Nasze usługi</h2>
+        <p>Kompleksowo budujemy wizerunek marek w świecie cyfrowym.</p>
+      </header>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">◈</div>
+          <h3>Web Design</h3>
+          <p>Nowoczesne i responsywne strony internetowe dopasowane do potrzeb Twojej marki.</p>
+          <strong>od 2500 zł</strong>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">✦</div>
+          <h3>Branding</h3>
+          <p>Tworzymy spójne identyfikacje wizualne, które wyróżniają firmę na rynku.</p>
+          <strong>od 1800 zł</strong>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">◎</div>
+          <h3>Social Media</h3>
+          <p>Projektujemy angażujące materiały i strategie komunikacji dla mediów społecznościowych.</p>
+          <strong>od 1200 zł</strong>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">↗</div>
+          <h3>Marketing</h3>
+          <p>Pomagamy docierać do nowych klientów dzięki przemyślanym kampaniom reklamowym.</p>
+          <strong>od 1500 zł</strong>
+        </article>
+      </div>
+    </section>
+    <section class="section portfolio-section" id="portfolio">
+      <header class="section-header">
+        <p class="eyebrow">Nasze realizacje</p>
+        <h2>Portfolio</h2>
+        <p>Wybrane projekty stworzone przez nasz zespół.</p>
+      </header>
+      <div class="portfolio-filters" role="group" aria-label="Filtrowanie portfolio">
+        <button class="filter-button active" type="button" data-filter="all">Wszystkie</button>
+        <button class="filter-button" type="button" data-filter="web">Web Design</button>
+        <button class="filter-button" type="button" data-filter="branding">Branding</button>
+        <button class="filter-button" type="button" data-filter="social">Social Media</button>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card" data-category="web">
+          <div class="portfolio-image gradient-one">
+            <span>01</span>
+          </div>
+          <div class="portfolio-content">
+            <p>Web Design</p>
+            <h3>Nova Finance</h3>
+          </div>
+        </article>
+        <article class="portfolio-card" data-category="branding">
+          <div class="portfolio-image gradient-two">
+            <span>02</span>
+          </div>
+          <div class="portfolio-content">
+            <p>Branding</p>
+            <h3>Mono Coffee</h3>
+          </div>
+        </article>
+        <article class="portfolio-card" data-category="social">
+          <div class="portfolio-image gradient-three">
+            <span>03</span>
+          </div>
+          <div class="portfolio-content">
+            <p>Social Media</p>
+            <h3>Urban Wear</h3>
+          </div>
+        </article>
+        <article class="portfolio-card" data-category="web">
+          <div class="portfolio-image gradient-four">
+            <span>04</span>
+          </div>
+          <div class="portfolio-content">
+            <p>Web Design</p>
+            <h3>Green House</h3>
+          </div>
+        </article>
+        <article class="portfolio-card" data-category="branding">
+          <div class="portfolio-image gradient-five">
+            <span>05</span>
+          </div>
+          <div class="portfolio-content">
+            <p>Branding</p>
+            <h3>Forma Studio</h3>
+          </div>
+        </article>
+        <article class="portfolio-card" data-category="social">
+          <div class="portfolio-image gradient-six">
+            <span>06</span>
+          </div>
+          <div class="portfolio-content">
+            <p>Social Media</p>
+            <h3>Vibe Music</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section testimonials" id="opinie">
+      <header class="section-header">
+        <p class="eyebrow">Opinie klientów</p>
+        <h2>Co mówią o nas?</h2>
+      </header>
+      <div class="testimonial-grid">
+        <article class="testimonial">
+          <div class="stars" aria-label="5 na 5 gwiazdek">★★★★★</div>
+          <blockquote>
+            „Pixel Studio całkowicie odmieniło wizerunek naszej marki. Strona wygląda
+            świetnie i przynosi nam nowych klientów.”
+          </blockquote>
+          <footer>
+            <strong>Anna Kowalska</strong>
+            <span>Nova Finance</span>
+          </footer>
+        </article>
+        <article class="testimonial">
+          <div class="stars" aria-label="5 na 5 gwiazdek">★★★★★</div>
+          <blockquote>
+            „Świetna komunikacja, kreatywność i terminowość. Zdecydowanie polecam
+            współpracę z całym zespołem.”
+          </blockquote>
+          <footer>
+            <strong>Michał Nowak</strong>
+            <span>Mono Coffee</span>
+          </footer>
+        </article>
+        <article class="testimonial">
+          <div class="stars" aria-label="5 na 5 gwiazdek">★★★★★</div>
+          <blockquote>
+            „Dostaliśmy dokładnie to, czego potrzebowaliśmy. Profesjonalna obsługa
+            od pierwszego spotkania do finalnego projektu.”
+          </blockquote>
+          <footer>
+            <strong>Julia Wiśniewska</strong>
+            <span>Urban Wear</span>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section class="section faq-section" id="faq">
+      <header class="section-header">
+        <p class="eyebrow">Masz pytania?</p>
+        <h2>Najczęściej zadawane pytania</h2>
+      </header>
+      <div class="faq-list">
+        <details>
+          <summary>Ile trwa wykonanie strony internetowej?</summary>
+          <p>Standardowa strona internetowa powstaje zazwyczaj w ciągu 2–5 tygodni, zależnie od zakresu projektu.</p>
+        </details>
+        <details>
+          <summary>Czy zajmujecie się stronami responsywnymi?</summary>
+          <p>Tak. Wszystkie nasze strony są projektowane z myślą o komputerach, tabletach i urządzeniach mobilnych.</p>
+        </details>
+        <details>
+          <summary>Czy mogę zamówić sam projekt graficzny?</summary>
+          <p>Tak. Możemy przygotować sam projekt UI/UX lub zająć się również jego wdrożeniem.</p>
+        </details>
+        <details>
+          <summary>Jak wygląda rozpoczęcie współpracy?</summary>
+          <p>Wystarczy wysłać formularz kontaktowy. Następnie skontaktujemy się z Tobą i omówimy szczegóły projektu.</p>
+        </details>
+      </div>
+    </section>
+    <section class="section calculator-section" id="wycena">
+      <header class="section-header">
+        <p class="eyebrow">Szybka wycena</p>
+        <h2>Oblicz orientacyjny koszt</h2>
+        <p>Wybierz interesujące Cię usługi.</p>
+      </header>
+      <form class="calculator" id="calculator">
+        <fieldset>
+          <legend>Wybierz usługi</legend>
+          <label class="check-option">
+            <input type="checkbox" value="2500" data-service="Strona internetowa">
+            <span>Strona internetowa</span>
+            <strong>2500 zł</strong>
+          </label>
+          <label class="check-option">
+            <input type="checkbox" value="1800" data-service="Branding">
+            <span>Branding</span>
+            <strong>1800 zł</strong>
+          </label>
+          <label class="check-option">
+            <input type="checkbox" value="1200" data-service="Social Media">
+            <span>Social Media</span>
+            <strong>1200 zł</strong>
+          </label>
+          <label class="check-option">
+            <input type="checkbox" value="1500" data-service="Kampania marketingowa">
+            <span>Kampania marketingowa</span>
+            <strong>1500 zł</strong>
+          </label>
+        </fieldset>
+        <output class="calculator-result" id="calculator-result" aria-live="polite">
+          Szacunkowa cena: 0 zł
+        </output>
+      </form>
+    </section>
+    <section class="section contact-section" id="kontakt">
+      <div class="contact-info">
+        <p class="eyebrow">Porozmawiajmy</p>
+        <h2>Masz pomysł? Zrealizujmy go razem.</h2>
+        <p>
+          Opowiedz nam o swoim projekcie. Odpowiemy na wiadomość
+          i przygotujemy indywidualną ofertę.
+        </p>
+        <address>
+          <p><strong>E-mail:</strong> kontakt@pixelstudio.pl</p>
+          <p><strong>Telefon:</strong> +48 123 456 789</p>
+          <p><strong>Adres:</strong> ul. Kreatywna 12, 00-001 Warszawa</p>
+        </address>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <fieldset>
+          <legend>Formularz kontaktowy</legend>
+          <div class="form-group">
+            <label for="name">Imię i nazwisko</label>
+            <input id="name" name="name" type="text" autocomplete="name" required minlength="3">
+            <small class="error-message" id="name-error"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Adres e-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <small class="error-message" id="email-error"></small>
+          </div>
+          <div class="form-group">
+            <label for="service">Interesująca usługa</label>
+            <select id="service" name="service" required>
+              <option value="">Wybierz usługę</option>
+              <option value="web">Web Design</option>
+              <option value="branding">Branding</option>
+              <option value="social">Social Media</option>
+              <option value="marketing">Marketing</option>
+            </select>
+            <small class="error-message" id="service-error"></small>
+          </div>
+          <div class="form-group">
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            <small class="error-message" id="message-error"></small>
+          </div>
+          <label class="consent">
+            <input id="consent" name="consent" type="checkbox" required>
+            <span>Akceptuję kontakt w sprawie przedstawionego zapytania.</span>
+          </label>
+          <small class="error-message" id="consent-error"></small>
+          <button class="button button-primary" type="submit">Wyślij wiadomość</button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <a class="logo" href="#start">
+          <span>Pixel</span> Studio
+        </a>
+        <p>Kreatywna agencja reklamowa.</p>
+      </div>
+      <div>
+        <h2>Kontakt</h2>
+        <address>
+          ul. Kreatywna 12<br>
+          00-001 Warszawa<br>
+          kontakt@pixelstudio.pl
+        </address>
+      </div>
+      <div>
+        <h2>Informacje</h2>
+        <p>NIP: 1234567890</p>
+        <p>REGON: 123456789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pixel Studio. Wszystkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
