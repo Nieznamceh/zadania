@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #222;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+article {
+    position: relative;
+    width: 300px;
+    padding: 30px 20px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+article h2 {
+    color: #333;
+}
+
+.cena {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+article p {
+    margin: 15px 0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174bb5;
+}
+
+article.polecany {
+    border: 3px solid #2563eb;
+    transform: scale(1.05);
+}
+
+article.polecany:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+h3.polecany {
+    margin:0;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 15px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media only screen and (orientation:portrait) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .polecany {
+        transform: none;
+    }
+
+    .polecany:hover {
+        transform: translateY(-8px);
+    }
+}
+```
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyszukiwarka państw</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="icon.jpg"rel="icon"type="image/x-icon">
+</head>
+<body>
+  <main class="app">
+    <h1>Wyszukiwarka państw</h1>
+    <form class="search-form" id="searchForm">
+      <label for="countryInput">Nazwa państwa</label>
+      <div class="search-box">
+        <input type="search" id="countryInput" name="country" placeholder="np. Poland" autocomplete="off">
+        <button type="submit">Szukaj</button>
+      </div>
+    </form>
+    <p class="status" id="loading" hidden>Ładowanie...</p>
+    <p class="status error" id="errorMessage" hidden></p>
+    <p class="status" id="noResults" hidden>Nie znaleziono państwa.</p>
+    <section class="results" id="results" aria-live="polite"></section>
+  </main>
+</body>
+</html>

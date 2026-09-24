@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator wyceny usługi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="icon"href="icon.jpeg"type="images/x-icon">
+</head>
+<body>
+  <main class="calculator">
+    <h1>Kalkulator wyceny usługi</h1>
+    <form id="priceForm">
+      <fieldset>
+        <legend>Rodzaj usługi</legend>
+        <label>
+          <input type="radio" name="service" value="500" checked>
+          Strona internetowa - 500 zł
+        </label>
+        <label>
+          <input type="radio" name="service" value="800">
+          Sklep internetowy - 800 zł
+        </label>
+        <label>
+          <input type="radio" name="service" value="300">
+          Landing page - 300 zł
+        </label>
+      </fieldset>
+      <div class="form-group">
+        <label for="quantity">Liczba podstron lub produktów:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+      </div>
+      <fieldset>
+        <legend>Termin realizacji</legend>
+        <label>
+          <input type="radio" name="deadline" value="1" checked>
+          Standardowy
+        </label>
+        <label>
+          <input type="radio" name="deadline" value="1.3">
+          Ekspresowy (+30%)
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Opcje dodatkowe</legend>
+        <label>
+          <input type="checkbox" name="extra" value="150">
+          Formularz kontaktowy (+150 zł)
+        </label>
+        <label>
+          <input type="checkbox" name="extra" value="200">
+          Integracja z mediami społecznościowymi (+200 zł)
+        </label>
+        <label>
+          <input type="checkbox" name="extra" value="250">
+          Optymalizacja SEO (+250 zł)
+        </label>
+        <label>
+          <input type="checkbox" name="extra" value="100">
+          Wersja mobilna (+100 zł)
+        </label>
+      </fieldset>
+      <section class="summary">
+        <h2>Podsumowanie</h2>
+        <p>Łączna cena:</p>
+        <output id="totalPrice">500 zł</output>
+      </section>
+    </form>
+  </main>
+</body>
+</html>

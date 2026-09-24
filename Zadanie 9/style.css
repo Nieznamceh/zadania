@@ -1,0 +1,72 @@
+body {
+  font-family:"Arial","sans-serif";
+  background-color:#f2f2f2;
+  margin:0;
+  padding:40px;
+}
+main {
+  max-width:600px;
+  margin:0 auto;
+  background-color:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+  text-align:center;
+  color:#333;
+  margin-bottom:25px;
+}
+label {
+  display:block;
+  margin-bottom:6px;
+  font-weight:bold;
+  color:#444;
+}
+input, textarea {
+  width:100%;
+  padding:10px;
+  margin-bottom:18px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  box-sizing:border-box;
+  font-size:16px;
+}
+input:focus,
+textarea:focus {
+  border-color:#007bff;
+  outline:none;
+}
+textarea {
+  min-height:150px;
+  resize:vertical;
+}
+.zgoda {
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  margin-bottom:20px;
+  font-weight:normal;
+}
+.zgoda input {
+  width:auto;
+  margin:3px 0 0;
+}
+button {
+  width:100%;
+  padding:12px;
+  background-color:#007bff;
+  color:white;
+  border:none;
+  border-radius:5px;
+  font-size:16px;
+  cursor:pointer;
+}
+button:hover {
+  background-color:#0056b3;
+}
+#result {
+  text-align:center;
+  margin-top:15px;
+  font-weight:bold;
+}

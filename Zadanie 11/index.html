@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista zadań To-do</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="icon.png"rel="icon"type="image/x-icon">
+</head>
+<body>
+  <main class="todo">
+    <h1>Lista zadań</h1>
+    <form id="taskForm">
+      <label for="taskInput">Nowe zadanie</label>
+      <div class="add-task">
+        <input type="text" id="taskInput" placeholder="Wpisz zadanie" required>
+        <button type="submit">Dodaj</button>
+      </div>
+    </form>
+    <nav class="filters" aria-label="Filtrowanie zadań">
+      <button type="button" class="filter active" data-filter="all">Wszystkie</button>
+      <button type="button" class="filter" data-filter="active">Aktywne</button>
+      <button type="button" class="filter" data-filter="completed">Wykonane</button>
+    </nav>
+    <ul id="taskList"></ul>
+    <button type="button" id="clearCompleted">Wyczyść wykonane</button>
+  </main>
+</body>
+</html>

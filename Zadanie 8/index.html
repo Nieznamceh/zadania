@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta usług</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="icon"type="image/x-icon"href="icon.png">
+</head>
+<body>
+  <main>
+    <h1>Nasza oferta</h1>
+    <section class="services">
+      <article class="service-card">
+        <h2>Projektowanie stron</h2>
+        <p>Tworzenie nowoczesnych i responsywnych stron internetowych.</p>
+        <button class="info-button" data-service="strony">Więcej informacji</button>
+      </article>
+      <article class="service-card">
+        <h2>Sklepy internetowe</h2>
+        <p>Projektowanie funkcjonalnych sklepów internetowych.</p>
+        <button class="info-button" data-service="sklepy">Więcej informacji</button>
+      </article>
+      <article class="service-card">
+        <h2>Pozycjonowanie</h2>
+        <p>Optymalizacja stron pod kątem wyszukiwarek internetowych.</p>
+        <button class="info-button" data-service="seo">Więcej informacji</button>
+      </article>
+    </section>
+  </main>
+  <dialog id="modal">
+    <button id="closeButton" class="close-button" aria-label="Zamknij">&times;</button>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+    <p id="modalPrice"></p>
+  </dialog>
+  <link rel="icon"type="image/x-icon"href="icon.png">
+</body>
+</html>

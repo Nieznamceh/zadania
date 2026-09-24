@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtrowane portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link href="icon.png"rel="icon"type="image/x-icon">
+</head>
+<body>
+<header>
+  <h1>Moje portfolio</h1>
+</header>
+<main>
+  <section aria-label="Filtrowanie portfolio">
+    <form>
+      <label for="search">Wyszukaj realizację</label>
+      <input type="search" id="search" placeholder="Wpisz nazwę projektu">
+      <label for="category">Wybierz kategorię</label>
+      <select id="category">
+        <option value="all">Wszystkie</option>
+        <option value="web">Strony internetowe</option>
+        <option value="graphics">Grafika</option>
+        <option value="mobile">Aplikacje mobilne</option>
+        <option value="branding">Branding</option>
+        <option value="photography">Fotografia</option>
+        <option value="ui">UI/UX</option>
+      </select>
+    </form>
+  </section>
+  <section aria-label="Informacje o wynikach">
+    <strong id="result-count">12</strong> realizacji
+  </section>
+  <section id="portfolio" aria-label="Realizacje portfolio">
+    <article class="portfolio-item" data-category="web" data-name="Sklep internetowy">
+      <header class="portfolio-image image-one">
+        <span>01</span>
+      </header>
+      <section>
+        <small>Strony internetowe</small>
+        <h2>Sklep internetowy</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="graphics" data-name="Plakat koncertowy">
+      <header class="portfolio-image image-two">
+        <span>02</span>
+      </header>
+      <section>
+        <small>Grafika</small>
+        <h2>Plakat koncertowy</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="mobile" data-name="Aplikacja fitness">
+      <header class="portfolio-image image-three">
+        <span>03</span>
+      </header>
+      <section>
+        <small>Aplikacje mobilne</small>
+        <h2>Aplikacja fitness</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="branding" data-name="Identyfikacja kawiarni">
+      <header class="portfolio-image image-four">
+        <span>04</span>
+      </header>
+      <section>
+        <small>Branding</small>
+        <h2>Identyfikacja kawiarni</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="photography" data-name="Sesja miejska">
+      <header class="portfolio-image image-five">
+        <span>05</span>
+      </header>
+      <section>
+        <small>Fotografia</small>
+        <h2>Sesja miejska</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="ui" data-name="Panel administracyjny">
+      <header class="portfolio-image image-six">
+        <span>06</span>
+      </header>
+      <section>
+        <small>UI/UX</small>
+        <h2>Panel administracyjny</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="web" data-name="Portfolio fotografa">
+      <header class="portfolio-image image-seven">
+        <span>07</span>
+      </header>
+      <section>
+        <small>Strony internetowe</small>
+        <h2>Portfolio fotografa</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="graphics" data-name="Projekt okładki">
+      <header class="portfolio-image image-eight">
+        <span>08</span>
+      </header>
+      <section>
+        <small>Grafika</small>
+        <h2>Projekt okładki</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="mobile" data-name="Aplikacja pogodowa">
+      <header class="portfolio-image image-nine">
+        <span>09</span>
+      </header>
+      <section>
+        <small>Aplikacje mobilne</small>
+        <h2>Aplikacja pogodowa</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="branding" data-name="Logo restauracji">
+      <header class="portfolio-image image-ten">
+        <span>10</span>
+      </header>
+      <section>
+        <small>Branding</small>
+        <h2>Logo restauracji</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="photography" data-name="Sesja produktowa">
+      <header class="portfolio-image image-eleven">
+        <span>11</span>
+      </header>
+      <section>
+        <small>Fotografia</small>
+        <h2>Sesja produktowa</h2>
+      </section>
+    </article>
+    <article class="portfolio-item" data-category="ui" data-name="Aplikacja bankowa">
+      <header class="portfolio-image image-twelve">
+        <span>12</span>
+      </header>
+      <section>
+        <small>UI/UX</small>
+        <h2>Aplikacja bankowa</h2>
+      </section>
+    </article>
+  </section>
+  <aside id="no-results">
+    Nie znaleziono realizacji spełniających podane kryteria.
+  </aside>
+</main>
+</body>
+</html>
+

@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #222;
+}
+body > header {
+  background: #171717;
+  color: white;
+  padding: 50px 5%;
+  text-align: center;
+}
+body > header h1 {
+  font-size: 42px;
+}
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+main > section:first-child {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  align-items: center;
+  gap: 15px;
+}
+label {
+  font-weight: bold;
+}
+input, select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #111;
+}
+main > section:nth-child(2) {
+  margin: 20px 0;
+  font-size: 17px;
+}
+
+#portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.portfolio-item {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+.portfolio-image {
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+}
+.portfolio-item > section {
+  padding: 22px;
+}
+.portfolio-item small {
+  display: block;
+  color: #666;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.portfolio-item h2 {
+  font-size: 22px;
+}
+.image-one {
+  background: #2563eb;
+}
+.image-two {
+  background: #db2777;
+}
+
+.image-three {
+  background: #16a34a;
+}
+.image-four {
+  background: #9333ea;
+}
+.image-five {
+  background: #ea580c;
+}
+
+.image-six {
+  background: #0891b2;
+}
+.image-seven {
+  background: #4f46e5;
+}
+.image-eight {
+  background: #be123c;
+}
+.image-nine {
+  background: #15803d;
+}
+.image-ten {
+  background: #7e22ce;
+}
+.image-eleven {
+  background: #c2410c;
+}
+.image-twelve {
+  background: #0369a1;
+}
+#no-results {
+  display: none;
+  background: white;
+  padding: 40px;
+  margin-top: 25px;
+  border-radius: 14px;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+}
+@media (max-width: 900px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+  }
+  #portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+  #portfolio {
+    grid-template-columns: 1fr;
+  }
+  body > header h1 {
+    font-size: 32px;
+  }
+}
+

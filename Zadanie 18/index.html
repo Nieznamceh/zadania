@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel administracyjny</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="icon.png"rel="icon"type="image/x-icon">
+</head>
+<body>
+  <div class="admin-panel">
+    <aside class="sidebar">
+      <div class="logo">AdminPanel</div>
+      <nav class="navigation">
+        <a href="#" class="nav-link active">Dashboard</a>
+        <a href="#" class="nav-link">Zamówienia</a>
+        <a href="#" class="nav-link">Klienci</a>
+        <a href="#" class="nav-link">Produkty</a>
+        <a href="#" class="nav-link">Ustawienia</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h1>Panel administracyjny</h1>
+          <p>Przegląd najważniejszych informacji</p>
+        </div>
+        <div class="user-box">
+          <div class="user-avatar">JK</div>
+          <div>
+            <strong>Jan Kowalski</strong>
+            <span>Administrator</span>
+          </div>
+        </div>
+      </header>
+      <section class="statistics">
+        <article class="stat-card">
+          <span class="stat-title">Zamówienia</span>
+          <strong id="ordersCount">0</strong>
+          <span class="stat-description">Wszystkie zamówienia</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-title">Przychód</span>
+          <strong id="revenue">0 zł</strong>
+          <span class="stat-description">Łączna wartość</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-title">Klienci</span>
+          <strong id="customersCount">0</strong>
+          <span class="stat-description">Aktywni klienci</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-title">Oczekujące</span>
+          <strong id="pendingCount">0</strong>
+          <span class="stat-description">Do realizacji</span>
+        </article>
+      </section>
+      <section class="orders-section">
+        <div class="section-header">
+          <div>
+            <h2>Ostatnie zamówienia</h2>
+            <p>Lista ostatnich zamówień klientów</p>
+          </div>
+          <div class="filters">
+            <input type="search" id="searchInput" placeholder="Szukaj zamówienia...">
+            <select id="statusFilter">
+              <option value="all">Wszystkie statusy</option>
+              <option value="Zrealizowane">Zrealizowane</option>
+              <option value="W realizacji">W realizacji</option>
+              <option value="Oczekujące">Oczekujące</option>
+              <option value="Anulowane">Anulowane</option>
+            </select>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Klient</th>
+                <th>Produkt</th>
+                <th>Data</th>
+                <th>Kwota</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="ordersTable"></tbody>
+          </table>
+        </div>
+        <div id="emptyMessage" class="empty-message">Brak zamówień spełniających kryteria.</div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
